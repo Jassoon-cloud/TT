@@ -3,8 +3,8 @@ name: Python Selenium Script
 on:
   push:
     branches:
-      - main  # 或者你希望触发工作的其他分支
-  workflow_dispatch:  # 允许手动触发工作流
+      - main
+  workflow_dispatch: 
 
 jobs:
   build:
@@ -17,14 +17,26 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.11.7'  # 或其他你需要的Python版本
+          python-version: '3.11.7'
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Cache Chrome and ChromeDriver
+        id: cache-chrome
+        uses: actions/cache@v2
+        with:
+          path: |
+            /opt/chrome
+            /usr/local/bin/chromedriver
+          key: ${{ runner.os }}-chrome-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-chrome-
+
       - name: Download Chrome and ChromeDriver
+        if: steps.cache-chrome.outputs.cache-hit != 'true'
         run: |
           # 下载 Chrome
           wget -N https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.58/linux64/chrome-linux64.zip
@@ -34,9 +46,6 @@ jobs:
           # 下载 ChromeDriver
           wget -N https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.58/linux64/chromedriver-linux64.zip
           unzip chromedriver-linux64.zip
-          
-          # 列出解压的文件
-          ls chromedriver-linux64
 
           # 修改权限并移动 chromedriver
           chmod +x chromedriver-linux64/chromedriver
@@ -44,11 +53,6 @@ jobs:
 
       - name: Run Selenium Script
         run: |
-          # 设置 Chrome 的路径
           export PATH=$PATH:/opt/chrome
-          
-          # 设置显示环境变量
           export DISPLAY=:99
-
-          # 运行你的 Python 脚本
-          python 取5个地区合并推送.py  # 将your_script.py替换为你的Python脚本文件名
+          python 取5个地区合并推送.py
