@@ -1,28 +1,17 @@
 name: tvb
 
-on:
-  push:
-    branches:
-      - main  # 或者你希望触发工作的其他分支
-  workflow_dispatch:  # 允许手动触发工作流
+on: [push]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v2
-
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.11.7'  # 或其他你需要的Python版本
-
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+        
+      - name: Install unzip
+        run: sudo apt-get install -y unzip
 
       - name: Download Chrome and ChromeDriver
         run: |
@@ -42,13 +31,18 @@ jobs:
           chmod +x chromedriver-linux64/chromedriver
           sudo mv chromedriver-linux64/chromedriver /opt/chrome/chrome-linux64
 
+      - name: Set Chrome Path
+        run: echo "PATH=$PATH:/opt/chrome" >> $GITHUB_ENV
+
+      - name: Install Python and Selenium
+        run: |
+          python -m pip install --upgrade pip
+          pip install selenium
+
       - name: Run Selenium Script
         run: |
-          # 设置 Chrome 的路径
-          export PATH=$PATH:/opt/chrome
-          
           # 设置显示环境变量
           export DISPLAY=:99
 
           # 运行你的 Python 脚本
-          python 取5个地区合并推送.py  # 将your_script.py替换为你的Python脚本文件名
+          python 取5个地区合并推送.py  # 替换为你的实际 Python 脚本
