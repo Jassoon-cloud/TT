@@ -1,0 +1,82 @@
+#EXTINF:-1 tvg-id="CCTV1" tvg-name="CCTV1" tvg-logo="https://live.fanmingming.com/tv/CCTV1.png" group-title="河北",CCTV-1 综合
+http://106.116.3.207:8890/rtp/239.253.92.83:8012
+#EXTINF:-1 tvg-id="CCTV2" tvg-name="CCTV2" tvg-logo="https://live.fanmingming.com/tv/CCTV2.png" group-title="河北",CCTV-2 财经
+http://106.116.3.207:8890/rtp/239.253.92.190:6065
+#EXTINF:-1 tvg-id="CCTV3" tvg-name="CCTV3" tvg-logo="https://live.fanmingming.com/tv/CCTV3.png" group-title="河北",CCTV-3 综艺
+http://106.116.3.207:8890/rtp/239.253.92.191:6057
+#EXTINF:-1 tvg-id="CCTV4" tvg-name="CCTV4" tvg-logo="https://live.fanmingming.com/tv/CCTV4.png" group-title="河北",CCTV-4 中文国际
+http://106.116.3.207:8890/rtp/239.253.92.251:6141
+#EXTINF:-1 tvg-id="CCTV5" tvg-name="CCTV5" tvg-logo="https://live.fanmingming.com/tv/CCTV5.png" group-title="河北",CCTV-5 体育
+http://106.116.3.207:8890/rtp/239.253.92.181:6046
+#EXTINF:-1 tvg-id="CCTV5+" tvg-name="CCTV5+" tvg-logo="https://live.fanmingming.com/tv/CCTV5+.png" group-title="河北",CCTV-5+ 体育赛事
+http://106.116.3.207:8890/rtp/239.253.92.82:8013
+#EXTINF:-1 tvg-id="CCTV6" tvg-name="CCTV6" tvg-logo="https://live.fanmingming.com/tv/CCTV6.png" group-title="河北",CCTV-6 电影
+http://106.116.3.207:8890/rtp/239.253.92.193:6058
+#EXTINF:-1 tvg-id="CCTV7" tvg-name="CCTV7" tvg-logo="https://live.fanmingming.com/tv/CCTV7.png" group-title="河北",CCTV-7 国防军事
+http://106.116.3.207:8890/rtp/239.253.92.194:6059
+#EXTINF:-1 tvg-id="CCTV8" tvg-name="CCTV8" tvg-logo="https://live.fanmingming.com/tv/CCTV8.png" group-title="河北",CCTV-8 电视剧
+http://106.116.3.207:8890/rtp/239.253.92.195:6060
+#EXTINF:-1 tvg-id="CCTV9" tvg-name="CCTV9" tvg-logo="https://live.fanmingming.com/tv/CCTV9.png" group-title="河北",CCTV-9 纪录
+http://106.116.3.207:8890/rtp/239.253.92.107:6020
+#EXTINF:-1 tvg-id="CCTV10" tvg-name="CCTV10" tvg-logo="https://live.fanmingming.com/tv/CCTV10.png" group-title="河北",CCTV-10 科教
+http://106.116.3.207:8890/rtp/239.253.92.196:6061
+#EXTINF:-1 tvg-id="CCTV11" tvg-name="CCTV11" tvg-logo="https://live.fanmingming.com/tv/CCTV11.png" group-title="河北",CCTV-11 戏曲
+http://106.116.3.207:8890/rtp/239.253.93.153:6321
+#EXTINF:-1 tvg-id="CCTV12" tvg-name="CCTV12" tvg-logo="https://live.fanmingming.com/tv/CCTV12.png" group-title="河北",CCTV-12 社会与法
+http://106.116.3.207:8890/rtp/239.253.92.197:6062
+#EXTINF:-1 tvg-id="CCTV13" tvg-name="CCTV13" tvg-logo="https://live.fanmingming.com/tv/CCTV13.png" group-title="河北",CCTV-13 新闻
+http://106.116.3.207:8890/rtp/239.253.92.13:8008
+#EXTINF:-1 tvg-id="CCTV14" tvg-name="CCTV14" tvg-logo="https://live.fanmingming.com/tv/CCTV14.png" group-title="河北",CCTV-14 少儿
+http://106.116.3.207:8890/rtp/239.253.92.198:6063
+#EXTINF:-1 tvg-id="CCTV15" tvg-name="CCTV15" tvg-logo="https://live.fanmingming.com/tv/CCTV15.png" group-title="河北",CCTV-15 音乐
+http://106.116.3.207:8890/rtp/239.253.93.154:6322
+
+#EXTINF:-1 tvg-id="湖南卫视" tvg-name="湖南卫视" tvg-logo="https://live.fanmingming.com/tv/湖南卫视.png" group-title="河北",湖南卫视
+http://106.116.3.207:8890/rtp/239.253.92.84:8015
+#EXTINF:-1 tvg-id="北京卫视" tvg-name="北京卫视" tvg-logo="https://live.fanmingming.com/tv/北京卫视.png" group-title="河北",北京卫视
+http://106.116.3.207:8890/rtp/239.253.92.87:8014
+#EXTINF:-1 tvg-id="东方卫视" tvg-name="东方卫视" tvg-logo="https://live.fanmingming.com/tv/东方卫视.png" group-title="河北",东方卫视
+http://106.116.3.207:8890/rtp/239.253.92.89:8019
+#EXTINF:-1 tvg-id="四川卫视" tvg-name="四川卫视" tvg-logo="https://live.fanmingming.com/tv/四川卫视.png" group-title="河北",四川卫视
+http://106.116.3.207:8890/rtp/239.253.92.16:6043
+#EXTINF:-1 tvg-id="天津卫视" tvg-name="天津卫视" tvg-logo="https://live.fanmingming.com/tv/天津卫视.png" group-title="河北",天津卫视
+http://106.116.3.207:8890/rtp/239.253.92.91:8021
+#EXTINF:-1 tvg-id="安徽卫视" tvg-name="安徽卫视" tvg-logo="https://live.fanmingming.com/tv/安徽卫视.png" group-title="河北",安徽卫视
+http://106.116.3.207:8890/rtp/239.253.92.209:6566
+#EXTINF:-1 tvg-id="山东卫视" tvg-name="山东卫视" tvg-logo="https://live.fanmingming.com/tv/山东卫视.png" group-title="河北",山东卫视
+http://106.116.3.207:8890/rtp/239.253.92.207:8109
+#EXTINF:-1 tvg-id="广东卫视" tvg-name="广东卫视" tvg-logo="https://live.fanmingming.com/tv/广东卫视.png" group-title="河北",广东卫视
+http://106.116.3.207:8890/rtp/239.253.92.206:8108
+#EXTINF:-1 tvg-id="广西卫视" tvg-name="广西卫视" tvg-logo="https://live.fanmingming.com/tv/广西卫视.png" group-title="河北",广西卫视
+http://106.116.3.207:8890/rtp/239.253.92.76:8043
+#EXTINF:-1 tvg-id="江苏卫视" tvg-name="江苏卫视" tvg-logo="https://live.fanmingming.com/tv/江苏卫视.png" group-title="河北",江苏卫视
+http://106.116.3.207:8890/rtp/239.253.92.88:8018
+#EXTINF:-1 tvg-id="江西卫视" tvg-name="江西卫视" tvg-logo="https://live.fanmingming.com/tv/江西卫视.png" group-title="河北",江西卫视
+http://106.116.3.207:8890/rtp/239.253.92.19:6145
+#EXTINF:-1 tvg-id="河北卫视" tvg-name="河北卫视" tvg-logo="https://live.fanmingming.com/tv/河北卫视.png" group-title="河北",河北卫视
+http://106.116.3.207:8890/rtp/239.253.92.154:6011
+#EXTINF:-1 tvg-id="河南卫视" tvg-name="河南卫视" tvg-logo="https://live.fanmingming.com/tv/河南卫视.png" group-title="河北",河南卫视
+http://106.116.3.207:8890/rtp/239.253.92.137:6144
+#EXTINF:-1 tvg-id="浙江卫视" tvg-name="浙江卫视" tvg-logo="https://live.fanmingming.com/tv/浙江卫视.png" group-title="河北",浙江卫视
+http://106.116.3.207:8890/rtp/239.253.92.90:8020
+#EXTINF:-1 tvg-id="海南卫视" tvg-name="海南卫视" tvg-logo="https://live.fanmingming.com/tv/海南卫视.png" group-title="河北",海南卫视
+http://106.116.3.207:8890/rtp/239.253.93.155:6323
+#EXTINF:-1 tvg-id="深圳卫视" tvg-name="深圳卫视" tvg-logo="https://live.fanmingming.com/tv/深圳卫视.png" group-title="河北",深圳卫视
+http://106.116.3.207:8890/rtp/239.253.92.86:8017
+#EXTINF:-1 tvg-id="湖北卫视" tvg-name="湖北卫视" tvg-logo="https://live.fanmingming.com/tv/湖北卫视.png" group-title="河北",湖北卫视
+http://106.116.3.207:8890/rtp/239.253.92.210:6567
+#EXTINF:-1 tvg-id="东南卫视" tvg-name="东南卫视" tvg-logo="https://live.fanmingming.com/tv/东南卫视.png" group-title="河北",东南卫视
+http://106.116.3.207:8890/rtp/239.253.92.201:6146
+#EXTINF:-1 tvg-id="贵州卫视" tvg-name="贵州卫视" tvg-logo="https://live.fanmingming.com/tv/贵州卫视.png" group-title="河北",贵州卫视
+http://106.116.3.207:8890/rtp/239.253.92.105:6055
+#EXTINF:-1 tvg-id="辽宁卫视" tvg-name="辽宁卫视" tvg-logo="https://live.fanmingming.com/tv/辽宁卫视.png" group-title="河北",辽宁卫视
+http://106.116.3.207:8890/rtp/239.253.92.115:6056
+#EXTINF:-1 tvg-id="重庆卫视" tvg-name="重庆卫视" tvg-logo="https://live.fanmingming.com/tv/重庆卫视.png" group-title="河北",重庆卫视
+http://106.116.3.207:8890/rtp/239.253.92.10:6053
+#EXTINF:-1 tvg-id="黑龙江卫视" tvg-name="黑龙江卫视" tvg-logo="https://live.fanmingming.com/tv/黑龙江卫视.png" group-title="河北",黑龙江卫视
+http://106.116.3.207:8890/rtp/239.253.92.85:8016
+#EXTINF:-1 tvg-id="吉林卫视" tvg-name="吉林卫视" tvg-logo="https://live.fanmingming.com/tv/吉林卫视.png" group-title="河北",吉林卫视
+http://106.116.3.207:8890/rtp/239.253.92.202:6147
+
+#EXTINF:-1 tvg-id="金鹰纪实" tvg-name="金鹰纪实" tvg-logo="https://live.fanmingming.com/tv/金鹰纪实.png" group-title="湖南",金鹰纪实
+http://106.116.3.207:8890/rtp/239.253.92.103:6054
