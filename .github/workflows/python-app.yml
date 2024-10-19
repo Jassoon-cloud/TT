@@ -1,4 +1,4 @@
-name: Selenium Script
+name: itvlist
 
 on:
   push:
@@ -6,21 +6,22 @@ on:
       - main
 
 jobs:
-  run-selenium:
+  build:
     runs-on: ubuntu-latest
-    
+    #runs-on: ubuntu-22.04@20240422.1.0
+
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v2
+    
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.11.7'
 
+      - name: Install dependencies
+        #run: pip install selenium==4.19.0 requests==2.31.0 futures==3.0.5 eventlet==0.36.1
+        run: pip install selenium requests futures eventlet
 
-      - name: Test file creation
-        run: |
-          mkdir test_directory
-          touch test_directory/test_file.txt
-          ls -l test_directory  # 列出目录内容以确认文件创建成功
-
-      - name: Check URL accessibility
-        run: |
-          curl -I http://tonkiang.us/hoteliptv.php
-
+      - name: Run itv_all
+        run: python ${{ github.workspace }}/测速.py
