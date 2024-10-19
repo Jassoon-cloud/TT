@@ -24,27 +24,26 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Set up Chromium and ChromeDriver
+      - name: Download Chrome and ChromeDriver
         run: |
-          sudo apt-get update
-          sudo apt-get install -y chromium-browser
-          
-          # 获取当前安装的Chromium版本
-          CHROMIUM_VERSION=$(chromium-browser --version | grep -oP '\d+\.\d+\.\d+\.\d+')
-          echo "Chromium version: $CHROMIUM_VERSION"
+          # 下载 Chrome
+          wget -N https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.58/linux64/chrome-linux64.zip
+          unzip chrome-linux64.zip
+          sudo mv chrome-linux64 /opt/chrome
 
-          # 获取与Chromium版本相对应的ChromeDriver版本
-          CHROMEDRIVER_VERSION=$(curl -sS "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_${CHROMIUM_VERSION%.*}")
-          echo "ChromeDriver version: $CHROMEDRIVER_VERSION"
-
-          # 下载并安装ChromeDriver
-          wget -N "http://chromedriver.storage.googleapis.com/${CHROMEDRIVER_VERSION}/chromedriver_linux64.zip"
-          unzip chromedriver_linux64.zip
+          # 下载 ChromeDriver
+          wget -N https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.58/linux64/chromedriver-linux64.zip
+          unzip chromedriver-linux64.zip
           chmod +x chromedriver
-          mv chromedriver /usr/local/bin/
+          sudo mv chromedriver /usr/local/bin/
 
       - name: Run Selenium Script
         run: |
+          # 设置 Chrome 的路径
+          export PATH=$PATH:/opt/chrome
+          
           # 设置显示环境变量
           export DISPLAY=:99
+
+          # 运行你的 Python 脚本
           python 取5个地区合并推送.py  # 将your_script.py替换为你的Python脚本文件名
