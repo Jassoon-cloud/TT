@@ -40,9 +40,4 @@ jobs:
           pip install selenium
 
       - name: Run Selenium Script
-        run: |
-          # 设置显示环境变量
-          export DISPLAY=:99
-
-          # 运行你的 Python 脚本
-          python 取5个地区合并推送.py  # 替换为你的实际 Python 脚本
+        run: python ${{ github.workspace }}/取5个地区合并推送.py  # 替换为你的实际 Python 脚本
