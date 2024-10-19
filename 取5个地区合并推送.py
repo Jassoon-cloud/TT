@@ -6,6 +6,8 @@ import random
 import requests
 import subprocess
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
 from collections import defaultdict
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -15,13 +17,17 @@ from selenium.webdriver.support import expected_conditions as EC
 # 获取IP
 def search_and_save_ips(locations):
     # 设置 Chrome 选项
-    chrome_options = webdriver.ChromeOptions()
+    chrome_options = Options()
+    chrome_options.binary_location = '/usr/local/bin/google-chrome'  # 指定 Chrome 浏览器的路径
     chrome_options.add_argument("--headless")  # 无头模式（可选）
-    chrome_options.add_argument("--no-sandbox")  # 解决DevToolsActivePort文件不存在的报错
+    chrome_options.add_argument("--no-sandbox")  # 解决 DevToolsActivePort 文件不存在的报错
     chrome_options.add_argument("--disable-dev-shm-usage")  # 解决资源限制的报错
 
+    # 指定 ChromeDriver 的路径
+    service = Service(executable_path='/usr/local/bin/chromedriver')  # 确保 chromedriver 在这个路径
+
     # 启动 Chrome 浏览器
-    driver = webdriver.Chrome(options=chrome_options)
+    driver = webdriver.Chrome(service=service, options=chrome_options)
     
     # 打开网址
     driver.get("http://tonkiang.us/hoteliptv.php")
