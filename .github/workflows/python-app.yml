@@ -16,12 +16,12 @@ jobs:
       - name: Download Chrome and ChromeDriver
         run: |
           # 下载 Chrome
-          wget -N https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.58/linux64/chrome-linux64.zip
+          wget -N https://storage.googleapis.com/chrome-for-testing-public/132.0.6784.0/linux64/chrome-linux64.zip
           unzip chrome-linux64.zip
           sudo mv chrome-linux64 /opt/chrome
 
           # 下载 ChromeDriver
-          wget -N https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.58/linux64/chromedriver-linux64.zip
+          wget -N https://storage.googleapis.com/chrome-for-testing-public/132.0.6784.0/linux64/chromedriver-linux64.zip
           unzip chromedriver-linux64.zip
           
           # 列出解压的文件
