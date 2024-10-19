@@ -23,7 +23,7 @@ jobs:
           # 下载 Chrome
           wget -N https://storage.googleapis.com/chrome-for-testing-public/132.0.6784.0/linux64/chrome-linux64.zip
           unzip chrome-linux64.zip
-          sudo mv chrome-linux64 /opt/chrome
+          sudo mv chrome-linux64 /usr/local/bin/
 
           # 下载 ChromeDriver
           wget -N https://storage.googleapis.com/chrome-for-testing-public/132.0.6784.0/linux64/chromedriver-linux64.zip
@@ -34,7 +34,7 @@ jobs:
 
           # 修改权限并移动 chromedriver
           chmod +x chromedriver-linux64/chromedriver
-          sudo mv chromedriver-linux64/chromedriver /opt/chrome/chrome-linux64
+          sudo mv chromedriver-linux64/chromedriver /usr/local/bin/chrome-linux64
 
       - name: Set Chrome Path
         run: echo "PATH=$PATH:/opt/chrome" >> $GITHUB_ENV
