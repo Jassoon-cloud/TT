@@ -142,7 +142,7 @@ def replace_url_in_line(line, ips):
 
 # 主程序
 def main():
-    base_path = 'D:/Google'  # 确保替换为你的实际路径
+    base_path = './'  # 确保替换为你的实际路径
     input_folder = os.path.join(base_path, '城市')
     replacement_folder = os.path.join(base_path, '测速')
 
@@ -210,7 +210,7 @@ def extract_average_speed(speed_file_path):
     return 0.0  # 返回0.0表示未能提取速度
 
 def merge_files():
-    base_path = 'D:/Google'
+    base_path = './'
     input_folder = os.path.join(base_path, '城市')
     replacement_folder = os.path.join(base_path, '测速')
     output_folder = os.path.join(base_path, '其他')
@@ -299,53 +299,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-    
-# 推送到坚果云
-# 定义源文件和目标文件夹路径  
-source_file = r'D:\Google\其他\IPTV4.m3u'  
-destination_folder = r'E:\坚果云\PG\tv'  
-  
-# 构建目标文件的完整路径  
-destination_file = os.path.join(destination_folder, os.path.basename(source_file))  
-  
-# 复制文件  
-try:  
-    shutil.copy2(source_file, destination_file)  
-    print("推送坚果云完成")  
-except Exception as e:  
-    print(f"复制文件时出错: {e}")
-
-# 推送到GiLab
-# 定义源文件和目标文件夹路径  
-source_file = r'D:\Google\其他\IPTV4.m3u'  
-destination_folder = r'D:\Chrome\iptv4\一次测速城市分类' 
-
-# 复制文件到目标文件夹
-shutil.copy(source_file, destination_folder)
-
-# 等待10秒
-time.sleep(10)
-
-# 切换目录到D:\Chrome\iptv4
-subprocess.Popen('start "" "D:\Git\git-bash.exe" cd /d D:\Chrome\iptv4', shell=True)
-
-# 等待10秒
-time.sleep(10)
-
-# 执行git add .
-subprocess.Popen('git add .', shell=True, cwd='D:\Chrome\iptv4')
-
-# 等待10秒
-time.sleep(10)
-
-# 执行保存这些更改
-subprocess.Popen('git commit -m "Save changes before merge"', shell=True, cwd='D:\Chrome\iptv4')
-
-# 等待10秒
-time.sleep(10)
-
-# 执行git push origin main
-subprocess.Popen('git push origin main', shell=True, cwd='D:\Chrome\iptv4')
-
-print("推送到Git仓库完成")
