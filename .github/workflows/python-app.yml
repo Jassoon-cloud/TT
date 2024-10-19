@@ -34,8 +34,13 @@ jobs:
           # 下载 ChromeDriver
           wget -N https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.58/linux64/chromedriver-linux64.zip
           unzip chromedriver-linux64.zip
-          chmod +x chromedriver
-          sudo mv chromedriver /usr/local/bin/
+          
+          # 列出解压的文件
+          ls chromedriver-linux64
+
+          # 修改权限并移动 chromedriver
+          chmod +x chromedriver-linux64/chromedriver
+          sudo mv chromedriver-linux64/chromedriver /usr/local/bin/
 
       - name: Run Selenium Script
         run: |
