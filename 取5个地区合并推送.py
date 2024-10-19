@@ -22,7 +22,7 @@ def search_and_save_ips(locations):
     chrome_options.add_argument("--disable-dev-shm-usage")  # 解决资源限制的报错
 
     # 指定 ChromeDriver 的路径
-    service = Service(executable_path='/opt/chrome/chrome-linux64/chromedriver')
+    service = Service(executable_path='/usr/local/bin/chromedriver')
 
     # 启动 Chrome 浏览器
     driver = webdriver.Chrome(service=service, options=chrome_options)
