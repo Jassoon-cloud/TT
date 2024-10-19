@@ -17,11 +17,11 @@ def search_and_save_ips(locations):
     # 设置 Chrome 选项
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument("--headless")  # 无头模式（可选）
-    chrome_options.add_argument("--no-sandbox")  # 解决DevToolsActivePort文件不存在的报错
+    chrome_options.add_argument("--no-sandbox")  # 解决 DevToolsActivePort 文件不存在的报错
     chrome_options.add_argument("--disable-dev-shm-usage")  # 解决资源限制的报错
 
-    # 启动 Chrome 浏览器
-    driver = webdriver.Chrome(options=chrome_options)
+    # 启动 Chrome 浏览器，指定可执行文件路径
+    driver = webdriver.Chrome(executable_path='/usr/local/bin/chrome', options=chrome_options)
     
     # 打开网址
     driver.get("http://tonkiang.us/hoteliptv.php")
