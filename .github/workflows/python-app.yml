@@ -1,4 +1,4 @@
-name: tvb
+name: CI
 
 on:
   push:
@@ -8,20 +8,20 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    #runs-on: ubuntu-22.04@20240422.1.0
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-    
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.11.7'
+    - name: Checkout code
+      uses: actions/checkout@v3  # Use the latest version
 
-      - name: Install dependencies
-        #run: pip install selenium==4.19.0 requests==2.31.0 futures==3.0.5 eventlet==0.36.1
-        run: pip install selenium requests futures eventlet
+    - name: Set up Python
+      uses: actions/setup-python@v4  # Use the latest version
+      with:
+        python-version: '3.8'  # Specify the desired Python version
 
-      - name: Run itv_all
-        run: python ${{ github.workspace }}/测速.py
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+
+    - name: Run my script
+      run: |
+        python 测速.py
