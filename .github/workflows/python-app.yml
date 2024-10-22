@@ -16,7 +16,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4  # Use the latest version
       with:
-        python-version: '3.7.11'  # Specify the desired Python version
+        python-version: '3.11.7'  # Specify the desired Python version
 
     - name: Install dependencies
       run: |
