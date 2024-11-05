@@ -12,12 +12,12 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3  # Use the latest version
+      uses: actions/checkout@v3
 
     - name: Set up Python
-      uses: actions/setup-python@v4  # Use the latest version
+      uses: actions/setup-python@v4
       with:
-        python-version: '3.11.7'  # Specify the desired Python version
+        python-version: '3.11.7'
 
     - name: Install dependencies
       run: |
@@ -26,3 +26,11 @@ jobs:
     - name: Run my script
       run: |
         python 测速.py
+
+    - name: Commit changes
+      run: |
+        git config --global user.name "Jassoon-cloud"
+        git config --global user.email "youjason1235@gmail.com"
+        git add .
+        git commit -m "Update files" || echo "No changes to commit"
+        git push
