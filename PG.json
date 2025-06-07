@@ -1,6 +1,5 @@
 {
-    "spider": "https://d.kstore.dev/download/10086/pg.jar",
-    "logo": "https://d.kstore.dev/download/10086/gif/u_722597311_936083233_fm_253_fmt_auto_app_120_f_JPEG.jpg",
+    "spider": "./pg.jar",
     "wallpaper": "https://i.postimg.cc/k469Wksd/20240603162129.jpg",
     "lives": [
         {
