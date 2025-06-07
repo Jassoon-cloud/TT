@@ -338,16 +338,6 @@
             "ext": ""
         },
         {
-            "key": "drpyS_光速[优]",
-            "name": "光速影视",
-            "type": 4,
-            "api": "http://148.135.4.145:5757/api/光速[优]?pwd=drpys",
-            "searchable": 1,
-            "filterable": 1,
-            "quickSearch": 0,
-            "ext": ""
-        },
-        {
             "key": "hipy_js_低端",
             "name": "低端影视",
             "type": 3,
