@@ -103,7 +103,7 @@
             "searchable": 1,
             "filterable": 1,
             "quickSearch": 0,
-            "ext": "./js/网络直播.js"
+            "ext": "./py/网络直播.py"
         },
         {
             "key": "hipy_js_JRKAN直播",
