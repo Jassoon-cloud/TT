@@ -99,11 +99,11 @@
             "key": "drpy2_网络直播",
             "name": "网络直播",
             "type": 3,
-            "api": "./lib/drpy2.min.js",
+            "api": "./py/网络直播.py",
             "searchable": 1,
             "filterable": 1,
             "quickSearch": 0,
-            "ext": "./py/网络直播.py"
+            "ext": ""
         },
         {
             "key": "hipy_js_JRKAN直播",
