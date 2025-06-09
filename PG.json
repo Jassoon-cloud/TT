@@ -95,6 +95,16 @@
             "ext": "./js/虎牙直播.js"
         },
         {
+            "key": "drpy2_网络直播",
+            "name": "网络直播",
+            "type": 3,
+            "api": "./lib/drpy2.min.js",
+            "searchable": 1,
+            "filterable": 1,
+            "quickSearch": 0,
+            "ext": "./js/网络直播.js"
+        },
+        {
             "key": "hipy_js_JRKAN直播",
             "name": "体育直播",
             "type": 3,
