@@ -1,5 +1,6 @@
 {
     "spider": "./pg.jar",
+    "logo": "./pc/zc.jpg",
     "wallpaper": "https://i.postimg.cc/k469Wksd/20240603162129.jpg",
     "lives": [
         {
