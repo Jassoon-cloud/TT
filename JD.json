@@ -205,6 +205,17 @@
             "ext": ""
         },
         {
+            "key": "hipy_js_仓鼠",
+            "name": "仓鼠影视",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "timeout": 30,
+            "api": "./py/cangshu.py",
+            "ext": ""
+        },
+        {
             "key": "hipy_js_边缘",
             "name": "边缘影视",
             "type": 3,
