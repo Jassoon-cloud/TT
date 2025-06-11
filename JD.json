@@ -149,6 +149,39 @@
             "api": "csp_SuBaiBaiGuard",
             "ext": "https://www.subaibai.com"
         },
+                {
+            "key": "hipy_js_瓜萌APP",
+            "name": "瓜萌影视",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "timeout": 30,
+            "api": "./py/瓜萌APP.py",
+            "ext": ""
+        },
+        {
+            "key": "hipy_js_忍者APP",
+            "name": "忍者影视",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "timeout": 30,
+            "api": "./py/忍者APP.py",
+            "ext": ""
+        },
+        {
+            "key": "hipy_js_晴天APP",
+            "name": "晴天影视",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "timeout": 30,
+            "api": "./py/晴天APP.py",
+            "ext": ""
+        },
         {
             "key": "hipy_js_斯克",
             "name": "斯克影视",
