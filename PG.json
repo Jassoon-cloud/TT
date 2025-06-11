@@ -183,6 +183,61 @@
             "ext": ""
         },
         {
+            "key": "hipy_js_茶杯狐APP",
+            "name": "茶杯影视",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "timeout": 30,
+            "api": "./py/茶杯狐.py",
+            "ext": ""
+        },
+        {
+            "key": "hipy_js_猎手影视APP",
+            "name": "猎手影视",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "timeout": 30,
+            "api": "./py/猎手影视APP.py",
+            "ext": ""
+        },
+        {
+            "key": "hipy_js_瓜萌APP",
+            "name": "瓜萌影视",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "timeout": 30,
+            "api": "./py/瓜萌APP.py",
+            "ext": ""
+        },
+        {
+            "key": "hipy_js_忍者APP",
+            "name": "忍者影视",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "timeout": 30,
+            "api": "./py/忍者APP.py",
+            "ext": ""
+        },
+        {
+            "key": "hipy_js_晴天APP",
+            "name": "晴天影视",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "timeout": 30,
+            "api": "./py/晴天APP.py",
+            "ext": ""
+        },
+        {
             "key": "hipy_js_热播APP",
             "name": "热播影视",
             "type": 3,
