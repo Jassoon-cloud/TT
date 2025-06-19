@@ -176,7 +176,7 @@
         },
         {
             "key": "再看",
-            "name": "再看｜APP",
+            "name": "再看影视",
             "type": 3,
             "quickSearch": 1,
             "api": "csp_AppGet",
@@ -190,7 +190,7 @@
         },
         {
             "key": "彼岸",
-            "name": "彼岸｜APP",
+            "name": "彼岸影视",
             "type": 3,
             "quickSearch": 1,
             "api": "csp_AppGet",
@@ -204,7 +204,7 @@
         },
         {
             "key": "在看",
-            "name": "在看｜APP",
+            "name": "在看影视",
             "type": 3,
             "quickSearch": 1,
             "api": "csp_AppGet",
@@ -255,7 +255,7 @@
         },
         {
             "key": "晚枫",
-            "name": "晚枫｜APP",
+            "name": "晚枫影视",
             "type": 3,
             "quickSearch": 1,
             "api": "csp_AppGet",
@@ -269,7 +269,7 @@
         },
         {
             "key": "诺映",
-            "name": "诺映｜APP",
+            "name": "诺映影视",
             "type": 3,
             "quickSearch": 1,
             "api": "csp_AppGet",
@@ -283,7 +283,7 @@
         },
         {
             "key": "趣看",
-            "name": "趣看｜APP",
+            "name": "趣看影视",
             "type": 3,
             "quickSearch": 1,
             "api": "csp_AppMuou",
