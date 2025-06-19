@@ -56,11 +56,9 @@
             "name": "豆瓣推荐",
             "type": 3,
             "indexs": 1,
-            "searchable": 1,
-            "quickSearch": 0,
-            "changeable": 0,
-            "api": "./lib/drpy2.min.js",
-            "ext": "./js/drpy.js"
+            "type": 3,
+            "api": "csp_Douban",
+            "searchable": 0
         },
         {
             "key": "drpyS_哔哩大全[官]",
@@ -141,12 +139,13 @@
         {
             "key": "csp_baibai",
             "name": "白白影视",
-            "jar": "./jar/spider.jar",
             "type": 3,
-            "api": "csp_SuBaiBaiGuard",
+            "searchable": 1,
+            "quickSearch": 1,
+            "api": "csp_SuBaiBai",
             "ext": "https://www.subaibai.com"
         },
-                {
+        {
             "key": "hipy_js_瓜萌APP",
             "name": "瓜萌影视",
             "type": 3,
