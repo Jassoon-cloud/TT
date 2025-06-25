@@ -146,7 +146,7 @@
             "ext": "https://www.subaibai.com"
         },
         {
-            "key": "hipy_js_瓜萌APP",
+            "key": "瓜萌",
             "name": "瓜萌影视",
             "type": 3,
             "quickSearch": 1,
@@ -160,7 +160,7 @@
             }
         },
         {
-            "key": "hipy_js_晴天APP",
+            "key": "晴天",
             "name": "晴天影视",
             "type": 3,
             "quickSearch": 1,
@@ -227,7 +227,7 @@
             "ext": ""
         },
         {
-            "key": "hipy_js_热播APP",
+            "key": "热播影视",
             "name": "热播影视",
             "type": 3,
             "api": "csp_AppRJ",
@@ -239,7 +239,7 @@
             }
         },
         {
-            "key": "hipy_js_若曦",
+            "key": "若惜",
             "name": "若惜影视",
             "type": 3,
             "quickSearch": 1,
@@ -316,7 +316,7 @@
             "ext": ""
         },
         {
-            "key": "hipy_js_仓鼠",
+            "key": "仓鼠",
             "name": "仓鼠影视",
             "type": 3,
             "quickSearch": 1,
