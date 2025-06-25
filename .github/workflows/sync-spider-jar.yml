@@ -1,0 +1,31 @@
+name: Sync Spider JAR File
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # 每天凌晨执行一次
+  workflow_dispatch: # 允许手动触发
+
+jobs:
+  sync_spider_jar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Download spider.jar from source repository
+        run: |
+          curl -L https://github.com/qist/tvbox/raw/master/xiaosa/spider.jar -o ./xiaosa/spider.jar
+
+      - name: Commit and push changes
+        if: success() && github.ref == 'refs/heads/main'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          if [ -f ./xiaosa/spider.jar ]; then
+            git add ./xiaosa/spider.jar
+            git commit -m "Update spider.jar via GitHub Action"
+            git push origin main
+          else
+            echo "No spider.jar to commit."
+          fi
