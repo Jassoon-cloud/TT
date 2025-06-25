@@ -1,0 +1,40 @@
+name: Sync Selected Ext Fields
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # 每天凌晨 0 点执行
+  workflow_dispatch:     # 支持手动触发
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run Sync Script
+        run: |
+          python sync_selected_ext_by_key.py
+
+      - name: Commit and Push Changes
+        if: success() && github.ref == 'refs/heads/main'
+        run: |
+          if [ -f .updated ]; then
+            git config --local user.email "action@github.com"
+            git config --local user.name "GitHub Action"
+            git add my.json
+            git commit -m "Auto update ext fields via GitHub Action"
+            git push origin main
+            echo "✅ 已提交更新"
+          else
+            echo "🚫 没有需要提交的更新"
+          fi
