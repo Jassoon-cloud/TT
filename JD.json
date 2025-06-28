@@ -1,6 +1,6 @@
 {
-    "spider": "./spider.jar",
-    "logo": "./pc/15.gif",
+    "spider": "./jar/spider.jar",
+    "logo": "./gif/15.gif",
     "wallpaper": "https://i.postimg.cc/k469Wksd/20240603162129.jpg",
     "lives": [
         {
@@ -73,7 +73,7 @@
         {
             "key": "网盘配置",
             "name": "网盘配置",
-            "jar":"./pg.jar",
+            "jar":"./jar/pg.jar",
             "type": 3,
             "api": "csp_Config",
             "searchable": 0,
