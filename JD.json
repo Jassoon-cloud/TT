@@ -34,12 +34,12 @@
             }
         },
         {
-          "name": "Gather.网络直播",
-          "type": 0,
-          "url": "https://tv.iill.top/m3u/Live",
-          "ua": "okhttp/3.15",
-          "epg": "http://127.0.0.1:10079/p/0/proxy/http://epg.112114.xyz/?ch={name}&date={date}",
-          "logo": "http://127.0.0.1:10079/p/0/proxy/https://epg.112114.xyz/logo/{name}.png"
+            "name": "Gather.网络直播",
+            "type": 0,
+            "url": "https://tv.iill.top/m3u/Live",
+            "ua": "okhttp/3.15",
+            "epg": "http://127.0.0.1:10079/p/0/proxy/http://epg.112114.xyz/?ch={name}&date={date}",
+            "logo": "http://127.0.0.1:10079/p/0/proxy/https://epg.112114.xyz/logo/{name}.png"
         },
         {
             "name": "AKTV.电视直播",
@@ -56,7 +56,6 @@
             "name": "豆瓣推荐",
             "type": 3,
             "indexs": 1,
-            "type": 3,
             "api": "csp_Douban",
             "searchable": 0
         },
@@ -73,15 +72,15 @@
         {
             "key": "网盘配置",
             "name": "网盘配置",
-            "jar":"./jar/pg.jar",
+            "jar": "./jar/pg.jar",
             "type": 3,
             "api": "csp_Config",
             "searchable": 0,
             "changeable": 0,
-            "ext":"./lib/tokenm.json",
+            "ext": "./lib/tokenm.json",
             "style": {
-              "type": "rect",
-              "ratio": 1.5
+                "type": "rect",
+                "ratio": 1.5
             }
         },
         {
@@ -132,7 +131,6 @@
             "searchable": 1,
             "quickSearch": 1,
             "api": "csp_Jianpian",
-            "type": 3,
             "playerType": 1,
             "ext": "http://api2.rinhome.com"
         },
@@ -294,11 +292,11 @@
             "quickSearch": 1,
             "api": "csp_AppGet2",
             "ext": {
-                "url": "https://qjappcms.cs4k.top",
-                "dataKey": "Z98KXaLtO2wC1Pte",
-                "dataIv": "Z98KXaLtO2wC1Pte",
+                "url": "https://apiapplbys.lbys.app:5678",
+                "dataKey": "apiapplbyskey168",
+                "dataIv": "apiapplbyskey168",
                 "deviceId": "",
-                "version": "120"
+                "version": "107"
             }
         },
         {
