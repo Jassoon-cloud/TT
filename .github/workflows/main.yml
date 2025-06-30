@@ -3,7 +3,7 @@ name: Sync Selected ext by key
 on:
   workflow_dispatch:  # 手动触发
   schedule:
-    - cron: '0 3 * * *'  # 每天凌晨 3 点自动运行
+    - cron: '0 16 * * *'  # 每天凌晨 3 点自动运行
 
 jobs:
   sync_ext:
