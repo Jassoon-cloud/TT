@@ -290,7 +290,7 @@
             "name": "仓鼠影视",
             "type": 3,
             "quickSearch": 1,
-            "api": "csp_AppGet2",
+            "api": "csp_AppGet",
             "ext": {
                 "url": "https://apiapplbys.lbys.app:5678",
                 "dataKey": "apiapplbyskey168",
