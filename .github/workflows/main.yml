@@ -1,16 +1,19 @@
-name: Sync Selected Ext Fields
+name: Sync Selected ext by key
 
 on:
+  workflow_dispatch:  # 手动触发
   schedule:
-    - cron: '0 16 * * *'  # 每天凌晨 0 点执行
-  workflow_dispatch:     # 支持手动触发
+    - cron: '0 3 * * *'  # 每天凌晨 3 点自动运行
 
 jobs:
-  sync:
+  sync_ext:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repo
+      - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          ref: main
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}  # 使用你的 PAT 进行 checkout
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -19,7 +22,7 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pip install -r requirements.txt
+          pip install requests
 
       - name: Run Sync Script
         run: |
@@ -28,19 +31,25 @@ jobs:
       - name: Commit and Push Changes
         if: success() && github.ref == 'refs/heads/main'
         env:
-           GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         run: |
-         if [ -f .updated ]; then
-         git config --local user.email "action@github.com"
-         git config --local user.name "GitHub Action"
+          if [ -f .updated ]; then
+            git config --local user.email "action@github.com"
+            git config --local user.name "GitHub Action"
 
-         # 替换 remote 地址，带上 token
-         git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+            # 打印当前的远程地址，确保我们正在操作正确的仓库
+            echo "Current remote URL: $(git remote get-url origin)"
+            
+            # 修改 remote 地址为带 token 的 HTTPS 地址
+            git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+            
+            # 再次打印远程地址以确认更改成功
+            echo "Updated remote URL: $(git remote get-url origin)"
 
-         git add JD.json
-         git commit -m "Auto update ext fields via GitHub Action"
-         git push origin main
-          echo "✅ 已提交更新"
-         else
-          echo "🚫 没有需要提交的更新"
-         fi
+            git add JD.json
+            git commit -m "Auto update ext fields via GitHub Action"
+            git push origin main
+            echo "✅ 已提交更新"
+          else
+            echo "🚫 没有需要提交的更新"
+          fi
