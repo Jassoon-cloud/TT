@@ -60,6 +60,16 @@
             "searchable": 0
         },
         {
+            "key": "哔哩大全",
+            "name": "哔哩大全",
+            "type": 3,
+            "api": "./lib/drpy2.min.js",
+            "searchable": 1,
+            "filterable": 1,
+            "quickSearch": 0,
+            "ext": "./js/我的哔哩.js?type=url&params=../json/哔哩大全.json"
+        },
+        {
             "key": "网盘配置",
             "name": "网盘配置",
             "jar": "./jar/pg.jar",
