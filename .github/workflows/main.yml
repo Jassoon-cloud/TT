@@ -27,6 +27,8 @@ jobs:
 
       - name: Commit and Push Changes
         if: success() && github.ref == 'refs/heads/main'
+        env:
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         run: |
           if [ -f .updated ]; then
             git config --local user.email "action@github.com"
