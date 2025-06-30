@@ -26,7 +26,7 @@ jobs:
 
       - name: Run Sync Script
         run: |
-          python sync_selected_ext_by_key.py
+          python tb.py
 
       - name: Commit and Push Changes
         if: success() && github.ref == 'refs/heads/main'
@@ -46,7 +46,7 @@ jobs:
             # 再次打印远程地址以确认更改成功
             echo "Updated remote URL: $(git remote get-url origin)"
 
-            git add JD.json
+            git add TB.json
             git commit -m "Auto update ext fields via GitHub Action"
             git push origin main
             echo "✅ 已提交更新"
