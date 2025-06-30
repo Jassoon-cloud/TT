@@ -35,8 +35,9 @@ def sync_selected_ext_by_key():
         print("❌ 远程数据不是有效的字典或未包含 sites 字段")
         return False
 
-    # 提取 sites 列表
+    # 提取远程和本地的 sites 列表
     remote_sites = remote_data.get('sites', [])
+    local_sites = local_data.get('sites', [])
 
     # 构建 remote_dict（只保留需要更新的 key）
     remote_dict = {}
@@ -44,13 +45,13 @@ def sync_selected_ext_by_key():
         if isinstance(item, dict) and 'key' in item and 'ext' in item and item['key'] in KEYS_TO_UPDATE:
             remote_dict[item['key']] = item['ext']
 
-    # 更新本地数据
+    # 遍历本地 sites，更新 ext 字段
     updated = False
-    for item in local_data:
+    for item in local_sites:
         if not isinstance(item, dict):
             print(f"⚠️ 跳过非字典项: {item}")
             continue
-        
+
         key = item.get('key')
         if key in KEYS_TO_UPDATE and key in remote_dict:
             new_ext = remote_dict[key]
