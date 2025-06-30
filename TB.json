@@ -1,8 +1,5 @@
 {
-    "jars": [
-    {"name": "spider", "path": "./jar/spider.jar"},
-    {"name": "PG", "path": "./jar/pg.jar"}
-  ],
+    "spider": "./jar/spider.jar",
     "logo": "./gif/15.gif",
     "wallpaper": "https://i.postimg.cc/k469Wksd/20240603162129.jpg",
     "lives": [
@@ -55,12 +52,15 @@
     ],
     "sites": [
         {
-            "key": "豆瓣",
-            "name": "豆瓣推荐",
-            "type": 3,
-            "indexs": 1,
-            "api": "csp_Douban",
-            "searchable": 0
+			"key": "豆瓣",
+			"name": "豆瓣推荐",
+            "jar": "./jar/pg.jar",
+			"type": 3,
+			"api": "csp_Douban",
+			"searchable": 0,
+			"changeable": 1,
+			"indexs":1,
+			"ext": "./lib/tokenm.json$$$./lib/douban.json"
         },
         {
             "key": "网盘配置",
