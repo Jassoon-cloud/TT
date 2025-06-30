@@ -59,7 +59,7 @@
             "api": "csp_Douban",
             "searchable": 0,
             "changeable": 1,
-            "indexs":1,
+            "indexs": 1,
             "ext": "./lib/tokenm.json$$$./lib/douban.json"
         },
         {
