@@ -51,27 +51,27 @@ def sync_sites_with_condition():
 
             existing_site = next((site for site in local_sites if site.get('key') == key), None)
 
+            site_info = {
+                'key': key,
+                'name': new_name,
+                'type': remote_site.get('type'),
+                'api': remote_site.get('api'),
+                'searchable': 1,  # 固定设置为 1
+                'ext': remote_site.get('ext', "")  # 如果没有 ext 字段，默认设为空字符串 ""
+            }
+
+            # 只有当 quickSearch 存在时才添加到结果中
+            if 'quickSearch' in remote_site:
+                site_info['quickSearch'] = remote_site['quickSearch']
+
+            # 只有当 filterable 存在时才添加到结果中
+            if 'filterable' in remote_site:
+                site_info['filterable'] = remote_site['filterable']
+
             if existing_site:
-                existing_site.update({
-                    'name': new_name,
-                    'type': remote_site.get('type'),
-                    'api': remote_site.get('api'),
-                    'searchable': remote_site.get('searchable'),
-                    'quickSearch': remote_site.get('quickSearch'),
-                    'filterable': remote_site.get('filterable'),
-                    'ext': remote_site.get('ext')
-                })
+                existing_site.update(site_info)
             else:
-                local_sites.append({
-                    'key': key,
-                    'name': new_name,
-                    'type': remote_site.get('type'),
-                    'api': remote_site.get('api'),
-                    'searchable': remote_site.get('searchable'),
-                    'quickSearch': remote_site.get('quickSearch'),
-                    'filterable': remote_site.get('filterable'),
-                    'ext': remote_site.get('ext')
-                })
+                local_sites.append(site_info)
 
             updated = True
 
@@ -90,7 +90,7 @@ def sync_sites_with_condition():
     if updated:
         with open(LOCAL_JSON_PATH, 'w', encoding='utf-8') as f:
             json.dump(local_data, f, ensure_ascii=False, indent=4)
-        print("✅ 已成功更新 JD.json 中的 sites 列表")
+        print("✅ 已成功更新 TB.json 中的 sites 列表")
         return True
     else:
         print("⚠️ 没有找到需要更新的内容")
