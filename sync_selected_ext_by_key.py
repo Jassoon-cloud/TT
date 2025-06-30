@@ -47,6 +47,10 @@ def sync_selected_ext_by_key():
     # 更新本地数据
     updated = False
     for item in local_data:
+        if not isinstance(item, dict):
+            print(f"⚠️ 跳过非字典项: {item}")
+            continue
+        
         key = item.get('key')
         if key in KEYS_TO_UPDATE and key in remote_dict:
             new_ext = remote_dict[key]
