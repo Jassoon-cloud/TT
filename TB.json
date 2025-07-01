@@ -633,6 +633,35 @@
                 "jxurl": "https://www.ququkan.cc"
             },
             "quickSearch": 1
+        },
+        {
+            "key": "斗量",
+            "name": "斗量影视",
+            "type": 3,
+            "api": "csp_AppSy",
+            "searchable": 1,
+            "ext": {
+                "url": "https://app.ystva.com",
+                "key1": "hsZwQK5yrnefW7OJ",
+                "key2": "hsZwQK5yrnefW7OJ",
+                "key3": "hsZwQK5yrnefW7OJ"
+            }
+        },
+        {
+            "key": "咖啡",
+            "name": "咖啡影视",
+            "type": 3,
+            "api": "csp_AppGet2",
+            "searchable": 1,
+            "ext": {
+                "url": "",
+                "site": "https://cdn-tupic-duofun-neimenggu.56uxi.com/2.txt",
+                "dataKey": "qwertyuiopqwertt",
+                "dataIv": "qwertyuiopqwertt",
+                "deviceId": "",
+                "version": "109"
+            },
+            "quickSearch": 1
         }
     ],
     "parses": [
