@@ -250,14 +250,14 @@
             "key": "仓鼠",
             "name": "仓鼠影视",
             "type": 3,
-            "api": "csp_AppGet",
+            "api": "csp_AppGet2",
             "searchable": 1,
             "ext": {
-                "url": "https://apiapplbys.lbys.app:5678",
-                "dataKey": "apiapplbyskey168",
-                "dataIv": "apiapplbyskey168",
+                "url": "https://qjappcms.cs4k.top",
+                "dataKey": "Z98KXaLtO2wC1Pte",
+                "dataIv": "Z98KXaLtO2wC1Pte",
                 "deviceId": "",
-                "version": "107"
+                "version": "120"
             },
             "quickSearch": 1
         },
@@ -719,6 +719,21 @@
                 "dataIv": "4d83b87c4c5ea111",
                 "deviceId": "",
                 "version": "105"
+            },
+            "quickSearch": 1
+        },
+        {
+            "key": "光盘",
+            "name": "光盘影视",
+            "type": 3,
+            "api": "csp_AppGet",
+            "searchable": 1,
+            "ext": {
+                "url": "http://119.13.88.18",
+                "dataKey": "xnybssspqtwotuwj",
+                "dataIv": "xnybssspqtwotuwj",
+                "deviceId": "",
+                "version": "101"
             },
             "quickSearch": 1
         }
