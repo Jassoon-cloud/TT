@@ -367,21 +367,6 @@
             "quickSearch": 1
         },
         {
-            "key": "剧咖",
-            "name": "剧咖影视",
-            "type": 3,
-            "api": "csp_AppGet",
-            "searchable": 1,
-            "ext": {
-                "url": "https://ys.xiaoqi0.cn",
-                "dataKey": "jukayingshi88888",
-                "dataIv": "jukayingshi88888",
-                "deviceId": "20d9b2c01d130342a99fdc8d693bfc0cd",
-                "version": "112"
-            },
-            "quickSearch": 1
-        },
-        {
             "key": "瓜萌",
             "name": "瓜萌影视",
             "type": 3,
@@ -573,21 +558,6 @@
                 "dataIv": "7xv16h7qgkrs9b1p",
                 "deviceId": "",
                 "version": ""
-            },
-            "quickSearch": 1
-        },
-        {
-            "key": "晚枫",
-            "name": "晚枫影视",
-            "type": 3,
-            "api": "csp_AppGet",
-            "searchable": 1,
-            "ext": {
-                "url": "http://111.180.202.216:999",
-                "dataKey": "fjhndgbjidfhgjsd",
-                "dataIv": "fjhndgbjidfhgjsd",
-                "deviceId": "2a7baa6ca6f46308cbf1d939bab0586f3",
-                "version": "120"
             },
             "quickSearch": 1
         },
