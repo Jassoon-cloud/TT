@@ -27,29 +27,31 @@ jobs:
       - name: Run Sync Script
         run: |
           python tb.py
+          if [ $? -eq 0 ]; then
+            touch .updated
+            echo "✅ tb.py 成功执行并生成 .updated"
+          else
+            echo "❌ tb.py 执行失败"
+            exit 1
+          fi
 
       - name: Commit and Push Changes
         if: success() && github.ref == 'refs/heads/main'
         env:
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           if [ -f .updated ]; then
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
 
-            # 打印当前的远程地址，确保我们正在操作正确的仓库
-            echo "Current remote URL: $(git remote get-url origin)"
-            
-            # 修改 remote 地址为带 token 的 HTTPS 地址
             git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-            
-            # 再次打印远程地址以确认更改成功
-            echo "Updated remote URL: $(git remote get-url origin)"
 
             git add TB.json
-            git commit -m "Auto update ext fields via GitHub Action"
+            git diff-index --quiet HEAD || git commit -m "Auto update ext fields via GitHub Action"
             git push origin main
             echo "✅ 已提交更新"
           else
             echo "🚫 没有需要提交的更新"
           fi
+
+          rm -f .updated || true
