@@ -283,7 +283,8 @@
             "api": "csp_AppGet2",
             "searchable": 1,
             "ext": {
-                "url": "http://122.228.193.2:9988",
+                "url": "",
+                "site": "https://lanyinghz.oss-cn-hangzhou.aliyuncs.com/lanyingxmy.txt",
                 "dataKey": "ca94b06ca359d80e",
                 "dataIv": "ca94b06ca359d80e",
                 "deviceId": "",
@@ -457,21 +458,6 @@
             "quickSearch": 1
         },
         {
-            "key": "优质",
-            "name": "优质影视",
-            "type": 3,
-            "api": "csp_AppGet",
-            "searchable": 1,
-            "ext": {
-                "url": "https://apiapplbys.lbys.app:5678",
-                "dataKey": "apiapplbyskey168",
-                "dataIv": "apiapplbyskey168",
-                "deviceId": "",
-                "version": "107"
-            },
-            "quickSearch": 1
-        },
-        {
             "key": "米兔",
             "name": "米兔影视",
             "type": 3,
@@ -483,21 +469,6 @@
                 "dataIv": "d032c12876bc6848",
                 "deviceId": "",
                 "version": "200"
-            },
-            "quickSearch": 1
-        },
-        {
-            "key": "人人",
-            "name": "人人影视",
-            "type": 3,
-            "api": "csp_AppGet",
-            "searchable": 1,
-            "ext": {
-                "url": "https://www.xiaohys.com",
-                "dataKey": "ENonBHeVBoYZhVUV",
-                "dataIv": "ENonBHeVBoYZhVUV",
-                "deviceId": "298e5fe29c74b35aabb9836ee2f6f449f",
-                "version": "166"
             },
             "quickSearch": 1
         },
@@ -605,19 +576,6 @@
             "quickSearch": 1
         },
         {
-            "key": "斗量",
-            "name": "斗量影视",
-            "type": 3,
-            "api": "csp_AppSy",
-            "searchable": 1,
-            "ext": {
-                "url": "https://app.ystva.com",
-                "key1": "hsZwQK5yrnefW7OJ",
-                "key2": "hsZwQK5yrnefW7OJ",
-                "key3": "hsZwQK5yrnefW7OJ"
-            }
-        },
-        {
             "key": "咖啡",
             "name": "咖啡影视",
             "type": 3,
@@ -704,6 +662,142 @@
                 "dataIv": "xnybssspqtwotuwj",
                 "deviceId": "",
                 "version": "101"
+            },
+            "quickSearch": 1
+        },
+        {
+            "key": "麻花",
+            "name": "麻花影视",
+            "type": 3,
+            "api": "csp_AppGet",
+            "searchable": 1,
+            "ext": {
+                "url": "",
+                "site": "https://apicoss-alimama-com-1307821617.file.myqcloud.com/Uploadsget",
+                "dataKey": "q7gj4f9br3fls6nh",
+                "dataIv": "q7gj4f9br3fls6nh",
+                "deviceId": "",
+                "version": ""
+            },
+            "quickSearch": 1
+        },
+        {
+            "key": "豆丁",
+            "name": "豆丁影视",
+            "type": 3,
+            "api": "csp_AppGet",
+            "searchable": 1,
+            "ext": {
+                "url": "",
+                "site": "https://vip.123pan.cn/1848451100/zl/xfdd.txt",
+                "dataKey": "xasdasdqwertyuio",
+                "dataIv": "xasdasdqwertyuio",
+                "deviceId": "",
+                "version": ""
+            },
+            "quickSearch": 1
+        },
+        {
+            "key": "灵虎",
+            "name": "灵虎影视",
+            "type": 3,
+            "api": "csp_AppGet",
+            "searchable": 1,
+            "ext": {
+                "url": "",
+                "site": "https://bind.315999.xyz/89.txt",
+                "dataKey": "#getapp@TMD@2025",
+                "dataIv": "#getapp@TMD@2025",
+                "deviceId": "",
+                "version": ""
+            },
+            "quickSearch": 1
+        },
+        {
+            "key": "鲶鱼",
+            "name": "鲶鱼影视",
+            "type": 3,
+            "api": "csp_AppGet",
+            "searchable": 1,
+            "ext": {
+                "url": "http://47.122.22.78",
+                "dataKey": "2234567890123456",
+                "dataIv": "2234567890123456",
+                "deviceId": "",
+                "version": ""
+            },
+            "quickSearch": 1
+        },
+        {
+            "key": "码头",
+            "name": "码头影视",
+            "type": 3,
+            "api": "csp_AppGet",
+            "searchable": 1,
+            "ext": {
+                "url": "https://www.lgmt.cc",
+                "dataKey": "asfjaskasgggassf",
+                "dataIv": "asfjaskasgggassf",
+                "deviceId": "",
+                "version": ""
+            }
+        },
+        {
+            "key": "米诺",
+            "name": "米诺影视",
+            "type": 3,
+            "api": "csp_AppGet",
+            "searchable": 1,
+            "ext": {
+                "url": "http://www.milkidc.cn",
+                "dataKey": "20c79c979da8db0f",
+                "dataIv": "20c79c979da8db0f",
+                "deviceId": "",
+                "version": ""
+            }
+        },
+        {
+            "key": "萝卜",
+            "name": "萝卜影视",
+            "type": 3,
+            "api": "csp_AppGet",
+            "searchable": 1,
+            "ext": {
+                "url": "https://apiapplbys.lbys.app:5678",
+                "dataKey": "apiapplbyskey168",
+                "dataIv": "apiapplbyskey168",
+                "deviceId": "",
+                "version": "107"
+            },
+            "quickSearch": 1
+        },
+        {
+            "key": "小红",
+            "name": "小红影视",
+            "type": 3,
+            "api": "csp_AppGet",
+            "searchable": 1,
+            "ext": {
+                "url": "https://www.xiaohys.com",
+                "dataKey": "ENonBHeVBoYZhVUV",
+                "dataIv": "ENonBHeVBoYZhVUV",
+                "deviceId": "298e5fe29c74b35aabb9836ee2f6f449f",
+                "version": "166"
+            },
+            "quickSearch": 1
+        },
+        {
+            "key": "丫丫",
+            "name": "丫丫影视",
+            "type": 3,
+            "api": "csp_AppGet",
+            "searchable": 1,
+            "ext": {
+                "url": "http://tv.yy-fun.cc",
+                "dataKey": "qkxnwkfjwpcnwycl",
+                "dataIv": "qkxnwkfjwpcnwycl",
+                "deviceId": "",
+                "version": ""
             },
             "quickSearch": 1
         }
