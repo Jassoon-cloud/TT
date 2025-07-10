@@ -65,12 +65,12 @@
         {
             "key": "哔哩大全",
             "name": "哔哩大全",
-            "type": 3,
-            "api": "./lib/drpy2.min.js",
+            "type": 4,
+            "api": "http://148.135.4.145:5757/api/我的哔哩[官]?pwd=drpys",
             "searchable": 1,
             "filterable": 1,
             "quickSearch": 0,
-            "ext": "./js/我的哔哩.js?type=url&params=../json/哔哩大全.json"
+            "ext": "H4sIAAAAAAAAA9PT088qzs/Tfzp5ytPJK58uWf60dYUeSAQAZ2A+OBkAAAA="
         },
         {
             "key": "网盘配置",
