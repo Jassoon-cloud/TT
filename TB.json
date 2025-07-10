@@ -464,7 +464,7 @@
             "api": "csp_AppGet",
             "searchable": 1,
             "ext": {
-                "url": "http://v.tkbot.fun",
+                "url": "https://new.tkbot.fun",
                 "dataKey": "d032c12876bc6848",
                 "dataIv": "d032c12876bc6848",
                 "deviceId": "",
@@ -587,7 +587,8 @@
                 "dataKey": "qwertyuiopqwertt",
                 "dataIv": "qwertyuiopqwertt",
                 "deviceId": "",
-                "version": "109"
+                "version": "109",
+                "ua": "okhttp/3.10.0"
             },
             "quickSearch": 1
         },
