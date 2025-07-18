@@ -593,19 +593,6 @@
             "quickSearch": 1
         },
         {
-            "key": "追忆",
-            "name": "追忆影视",
-            "type": 3,
-            "api": "csp_AppSy",
-            "searchable": 1,
-            "ext": {
-                "url": "http://110.42.7.130:1866",
-                "key1": "aassddwwxxllsx1x",
-                "key2": "2083c87e98b6ce08",
-                "key3": "2083c87e98b6ce08"
-            }
-        },
-        {
             "key": "蓝鹰",
             "name": "蓝鹰影视",
             "type": 3,
@@ -643,8 +630,8 @@
             "api": "csp_AppGet",
             "searchable": 1,
             "ext": {
-                "url": "",
-                "site": "https://apicoss-alimama-com-1307821617.file.myqcloud.com/Uploadsget",
+                "url": "http://124.223.27.166:130",
+                "site": "",
                 "dataKey": "q7gj4f9br3fls6nh",
                 "dataIv": "q7gj4f9br3fls6nh",
                 "deviceId": "",
@@ -840,6 +827,21 @@
                 "dataIv": "SDSFET23215FDSF2",
                 "deviceId": "",
                 "version": "119"
+            },
+            "quickSearch": 1
+        },
+        {
+            "key": "顾我",
+            "name": "顾我影视",
+            "type": 3,
+            "api": "csp_AppGet2",
+            "searchable": 1,
+            "ext": {
+                "url": "http://121.62.21.14:520",
+                "dataKey": "ca94b06ca3c7d80e",
+                "dataIv": "ca94b06ca3c7d80e",
+                "deviceId": "",
+                "version": "120"
             },
             "quickSearch": 1
         }
