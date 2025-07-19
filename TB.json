@@ -791,16 +791,6 @@
             "quickSearch": 1
         },
         {
-            "key": "闪影",
-            "name": "闪影影视",
-            "type": 3,
-            "api": "csp_AppYs",
-            "searchable": 1,
-            "ext": "http://38.47.213.61:41271/mogai_api.php/v1.vod",
-            "quickSearch": 1,
-            "filterable": 1
-        },
-        {
             "key": "知了",
             "name": "知了影视",
             "type": 3,
