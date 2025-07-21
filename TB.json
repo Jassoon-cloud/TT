@@ -253,7 +253,7 @@
             "api": "csp_AppGet2",
             "searchable": 1,
             "ext": {
-                "url": "https://qjappcms.cs4k.top",
+                "url": "https://newappcms.cs4k.top",
                 "dataKey": "Z98KXaLtO2wC1Pte",
                 "dataIv": "Z98KXaLtO2wC1Pte",
                 "deviceId": "",
@@ -782,7 +782,8 @@
             "api": "csp_AppGet2",
             "searchable": 1,
             "ext": {
-                "url": "http://121.62.21.14:520",
+                "url": "",
+                "site": "https://guwozj-1319364746.cos.ap-guangzhou.myqcloud.com/app.txt",
                 "dataKey": "ca94b06ca3c7d80e",
                 "dataIv": "ca94b06ca3c7d80e",
                 "deviceId": "",
@@ -804,6 +805,19 @@
                 "version": "119"
             },
             "quickSearch": 1
+        },
+        {
+            "key": "追忆",
+            "name": "追忆影视",
+            "type": 3,
+            "api": "csp_AppSy",
+            "searchable": 1,
+            "ext": {
+                "url": "http://110.42.7.130:1866",
+                "key1": "aassddwwxxllsx1x",
+                "key2": "2083c87e98b6ce08",
+                "key3": "2083c87e98b6ce08"
+            }
         }
     ],
     "parses": [
