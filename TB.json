@@ -368,21 +368,6 @@
             "quickSearch": 1
         },
         {
-            "key": "再看",
-            "name": "再看影视",
-            "type": 3,
-            "api": "csp_AppGet",
-            "searchable": 1,
-            "ext": {
-                "url": "http://149.88.64.161:8627",
-                "dataKey": "123456789ABCDEFG",
-                "dataIv": "123456789ABCDEFG",
-                "deviceId": "2bb4c10f3e043307dbfc579bd0db23f4e",
-                "version": "110"
-            },
-            "quickSearch": 1
-        },
-        {
             "key": "橘子",
             "name": "橘子影视",
             "type": 3,
