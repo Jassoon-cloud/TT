@@ -293,21 +293,6 @@
             "quickSearch": 1
         },
         {
-            "key": "桃子",
-            "name": "桃子影视",
-            "type": 3,
-            "api": "csp_AppGet",
-            "searchable": 1,
-            "ext": {
-                "url": "https://appcms.tzys.xyz",
-                "dataKey": "KL6vlZkw6WL5x90U",
-                "dataIv": "KL6vlZkw6WL5x90U",
-                "deviceId": "4b4c36766c5a6b7736574c3578393055",
-                "version": "119"
-            },
-            "quickSearch": 1
-        },
-        {
             "key": "海豚",
             "name": "海豚影视",
             "type": 3,
@@ -375,26 +360,12 @@
             "api": "csp_AppGet",
             "searchable": 1,
             "ext": {
-                "url": "https://api1.bffree.cn",
+                "url": "",
+                "site": "http://t.bffree.cn/1.txt",
                 "dataKey": "2015692015692015",
                 "dataIv": "2015692015692015",
                 "deviceId": "",
                 "version": "300"
-            },
-            "quickSearch": 1
-        },
-        {
-            "key": "彼岸",
-            "name": "彼岸影视",
-            "type": 3,
-            "api": "csp_AppGet",
-            "searchable": 1,
-            "ext": {
-                "url": "https://mfsp33.top",
-                "dataKey": "1234567887654321",
-                "dataIv": "1234567887654321",
-                "deviceId": "298e5fe29c74b35aabb9836ee2f6f449f",
-                "version": "315"
             },
             "quickSearch": 1
         },
@@ -425,36 +396,6 @@
                 "dataIv": "d032c12876bc6848",
                 "deviceId": "",
                 "version": "200"
-            },
-            "quickSearch": 1
-        },
-        {
-            "key": "在看",
-            "name": "在看影视",
-            "type": 3,
-            "api": "csp_AppGet",
-            "searchable": 1,
-            "ext": {
-                "url": "http://149.88.64.161:9525",
-                "dataKey": "123456789ABCDEFG",
-                "dataIv": "123456789ABCDEFG",
-                "deviceId": "",
-                "version": ""
-            },
-            "quickSearch": 1
-        },
-        {
-            "key": "星河",
-            "name": "星河影视",
-            "type": 3,
-            "api": "csp_AppGet",
-            "searchable": 1,
-            "ext": {
-                "url": "http://121.62.22.204:9876",
-                "dataKey": "f5e2tx53ykp6s2c9",
-                "dataIv": "f5e2tx53ykp6s2c9",
-                "deviceId": "",
-                "version": "361"
             },
             "quickSearch": 1
         },
@@ -628,20 +569,6 @@
             "quickSearch": 1
         },
         {
-            "key": "码头",
-            "name": "码头影视",
-            "type": 3,
-            "api": "csp_AppGet",
-            "searchable": 1,
-            "ext": {
-                "url": "https://www.lgmt.cc",
-                "dataKey": "asfjaskasgggassf",
-                "dataIv": "asfjaskasgggassf",
-                "deviceId": "",
-                "version": ""
-            }
-        },
-        {
             "key": "米诺",
             "name": "米诺影视",
             "type": 3,
@@ -717,52 +644,6 @@
             "quickSearch": 1
         },
         {
-            "key": "热剧",
-            "name": "热剧影视",
-            "type": 3,
-            "api": "csp_AppGet2",
-            "searchable": 1,
-            "ext": {
-                "url": "",
-                "site": "https://app-qy.oss-cn-shanghai.aliyuncs.com/rebo.txt",
-                "dataKey": "8191A7F47B37882F",
-                "dataIv": "8191A7F47B37882F",
-                "deviceId": "",
-                "version": ""
-            },
-            "quickSearch": 1
-        },
-        {
-            "key": "火猫",
-            "name": "火猫影视",
-            "type": 3,
-            "api": "csp_AppMuou",
-            "searchable": 1,
-            "ext": {
-                "url": "http://154.12.22.168:14988",
-                "dataKey": "531f6082a43ac5d7",
-                "dataIv": "531f6082a43ac5d7",
-                "jxurl": "http://app.789dd.cn"
-            },
-            "quickSearch": 1
-        },
-        {
-            "key": "顾我",
-            "name": "顾我影视",
-            "type": 3,
-            "api": "csp_AppGet2",
-            "searchable": 1,
-            "ext": {
-                "url": "",
-                "site": "https://guwozj-1319364746.cos.ap-guangzhou.myqcloud.com/app.txt",
-                "dataKey": "ca94b06ca3c7d80e",
-                "dataIv": "ca94b06ca3c7d80e",
-                "deviceId": "",
-                "version": "120"
-            },
-            "quickSearch": 1
-        },
-        {
             "key": "稀饭",
             "name": "稀饭影视",
             "type": 3,
@@ -802,6 +683,69 @@
                 "dataIv": "ca94b06ca3c7d80e",
                 "deviceId": "",
                 "version": "119"
+            },
+            "quickSearch": 1
+        },
+        {
+            "key": "魔方",
+            "name": "魔方影视",
+            "type": 3,
+            "api": "csp_AppGet",
+            "searchable": 1,
+            "ext": {
+                "url": "",
+                "site": "https://www.snysw.xyz/mfys.txt",
+                "dataKey": "1234567887654321",
+                "dataIv": "1234567887654321",
+                "deviceId": "",
+                "version": ""
+            },
+            "quickSearch": 1
+        },
+        {
+            "key": "小野",
+            "name": "小野影视",
+            "type": 3,
+            "api": "csp_AppGet",
+            "searchable": 1,
+            "ext": {
+                "url": "https://appcms.xy4k.com",
+                "site": "",
+                "dataKey": "7SDWjknU34zqFbVr",
+                "dataIv": "7SDWjknU34zqFbVr",
+                "deviceId": "",
+                "version": ""
+            },
+            "quickSearch": 1
+        },
+        {
+            "key": "爱看",
+            "name": "爱看丨APP影视",
+            "type": 3,
+            "api": "csp_AppGet",
+            "searchable": 1,
+            "ext": {
+                "url": "http://154.37.220.65",
+                "dataKey": "uI1TkPJC8B46AyN3",
+                "dataIv": "uI1TkPJC8B46AyN3",
+                "deviceId": "2112fc5eac600314ba95c4d65da9286b3",
+                "version": "120"
+            },
+            "quickSearch": 1
+        },
+        {
+            "key": "白蛇",
+            "name": "白蛇影视",
+            "type": 3,
+            "api": "csp_AppGet",
+            "searchable": 1,
+            "ext": {
+                "url": "",
+                "site": "http://tengxunyunaliyun.oss-cn-shanghai.aliyuncs.com/tengxunyun.txt",
+                "dataKey": "f5e2tx53ykp6s2c9",
+                "dataIv": "f5e2tx53ykp6s2c9",
+                "deviceId": "",
+                "version": "361"
             },
             "quickSearch": 1
         }
