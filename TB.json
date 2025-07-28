@@ -720,7 +720,7 @@
         },
         {
             "key": "爱看",
-            "name": "爱看丨APP影视",
+            "name": "爱看影视",
             "type": 3,
             "api": "csp_AppGet",
             "searchable": 1,
