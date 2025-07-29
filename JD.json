@@ -144,6 +144,28 @@
             "ext": "https://www.subaibai.com"
         },
         {
+            "key": "移动",
+            "name": "移动影视",
+            "type": 3,
+            "api": "csp_YD",
+            "searchable": 1,
+            "ext": "",
+            "quickSearch": 1
+        },
+        {
+            "key": "行动",
+            "name": "行动影视",
+            "type": 3,
+            "api": "csp_AppSy",
+            "searchable": 1,
+            "ext": {
+                "url": "http://160.202.246.9:2356",
+                "key1": "aassddwwxxllsx1x",
+                "key2": "aassddwwxxllsx1x",
+                "key3": "aassddwwxxllsx1x"
+            }
+        },
+        {
             "key": "瓜萌",
             "name": "瓜萌影视",
             "type": 3,
@@ -198,17 +220,6 @@
                 "deviceId": "298e5fe29c74b35aabb9836ee2f6f449f",
                 "version": "315"
             }
-        },
-        {
-            "key": "hipy_js_斯克",
-            "name": "斯克影视",
-            "type": 3,
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "timeout": 30,
-            "api": "./py/4KAV.py",
-            "ext": ""
         },
         {
             "key": "热播影视",
@@ -273,31 +284,6 @@
             "timeout": 30,
             "api": "./py/哇哇APP.py",
             "ext": ""
-        },
-        {
-            "key": "hipy_js_魔方",
-            "name": "魔方影视",
-            "type": 3,
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "timeout": 30,
-            "api": "./py/魔方影视APP.py",
-            "ext": ""
-        },
-        {
-            "key": "仓鼠",
-            "name": "仓鼠影视",
-            "type": 3,
-            "quickSearch": 1,
-            "api": "csp_AppGet",
-            "ext": {
-                "url": "https://apiapplbys.lbys.app:5678",
-                "dataKey": "apiapplbyskey168",
-                "dataIv": "apiapplbyskey168",
-                "deviceId": "",
-                "version": "107"
-            }
         },
         {
             "key": "雄鹰",
