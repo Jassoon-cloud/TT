@@ -311,6 +311,38 @@
             "ext": ""
         },
         {
+            "key": "魔方",
+            "name": "魔方影视",
+            "type": 3,
+            "api": "csp_AppGet",
+            "searchable": 1,
+            "ext": {
+                "url": "",
+                "site": "https://www.snysw.xyz/mfys.txt",
+                "dataKey": "1234567887654321",
+                "dataIv": "1234567887654321",
+                "deviceId": "",
+                "version": ""
+            },
+            "quickSearch": 1
+        },
+        {
+            "key": "小野",
+            "name": "小野影视",
+            "type": 3,
+            "api": "csp_AppGet",
+            "searchable": 1,
+            "ext": {
+                "url": "https://appcms.xy4k.com",
+                "site": "",
+                "dataKey": "7SDWjknU34zqFbVr",
+                "dataIv": "7SDWjknU34zqFbVr",
+                "deviceId": "",
+                "version": ""
+            },
+            "quickSearch": 1
+        },
+        {
             "key": "hipy_js_低端",
             "name": "低端影视",
             "type": 3,
