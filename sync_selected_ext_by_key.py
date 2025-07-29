@@ -4,11 +4,11 @@ import requests
 # 本地 JSON 文件路径
 LOCAL_JSON_PATH = 'JD.json'
 # 远程 JSON 地址
-REMOTE_JSON_URL = 'https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/xiaosa/api.json'
+REMOTE_JSON_URL = 'https://raw.githubusercontent.com/cluntop/tvbox/refs/heads/main/test/xiaosa/api.json'
 
 # 指定要更新的 key 列表
 KEYS_TO_UPDATE = [
-    "热播影视", "仓鼠", "瓜萌", "晴天", "再看", "彼岸", "在看", "热播", "晚枫", "诺映", "趣看", "雄鹰"
+    "热播影视", "移动", "行动", "晴天", "若惜", "魔方", "小野", "丫丫", "鲸鱼", "雄鹰"
 ]
 
 def sync_selected_ext_by_key():
