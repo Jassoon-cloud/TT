@@ -26,12 +26,12 @@ jobs:
 
       - name: Run Sync Script
         run: |
-          python tb.py
+          python jd.py
           if [ $? -eq 0 ]; then
             touch .updated
-            echo "✅ tb.py 成功执行并生成 .updated"
+            echo "✅ jd.py 成功执行并生成 .updated"
           else
-            echo "❌ tb.py 执行失败"
+            echo "❌ jd.py 执行失败"
             exit 1
           fi
 
@@ -46,7 +46,7 @@ jobs:
 
             git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
 
-            git add TB.json
+            git add JD.json
             git diff-index --quiet HEAD || git commit -m "Auto update ext fields via GitHub Action"
             git push origin main
             echo "✅ 已提交更新"
