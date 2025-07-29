@@ -116,7 +116,7 @@
             }
         },
         {
-            "key": "hipy_js_瓜子",
+            "key": "瓜子",
             "name": "瓜子影视",
             "type": 3,
             "api": "csp_Gz360",
@@ -125,7 +125,7 @@
             "filterable": 1
         },
         {
-            "key": "hipy_js_荐片",
+            "key": "荐片",
             "name": "荐片影视",
             "type": 3,
             "searchable": 1,
@@ -231,7 +231,7 @@
             }
         },
         {
-            "key": "hipy_js_零度",
+            "key": "零度",
             "name": "零度影视",
             "type": 3,
             "searchable": 1,
@@ -305,7 +305,7 @@
             "quickSearch": 1
         },
         {
-            "key": "hipy_js_低端",
+            "key": "低端",
             "name": "低端影视",
             "type": 3,
             "api": "csp_Ddys",
