@@ -343,6 +343,37 @@
             "quickSearch": 1
         },
         {
+            "key": "丫丫",
+            "name": "丫丫影视",
+            "type": 3,
+            "api": "csp_AppGet",
+            "searchable": 1,
+            "ext": {
+                "url": "http://tv.yy-fun.cc",
+                "dataKey": "qkxnwkfjwpcnwycl",
+                "dataIv": "qkxnwkfjwpcnwycl",
+                "deviceId": "",
+                "version": ""
+            },
+            "quickSearch": 1
+        },
+        {
+            "key": "鲸鱼",
+            "name": "鲸鱼影视",
+            "type": 3,
+            "api": "csp_AppGet2",
+            "searchable": 1,
+            "ext": {
+                "url": "",
+                "site": "https://jingyu4k-1312635929.cos.ap-nanjing.myqcloud.com/1.json",
+                "dataKey": "AAdgrdghjfgswerA",
+                "dataIv": "AAdgrdghjfgswerA",
+                "deviceId": "",
+                "version": ""
+            },
+            "quickSearch": 1
+        },
+        {
             "key": "hipy_js_低端",
             "name": "低端影视",
             "type": 3,
