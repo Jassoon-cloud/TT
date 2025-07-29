@@ -94,6 +94,16 @@
             "ext": "./js/虎牙直播.js"
         },
         {
+            "key": "bilizhibo",
+            "name": "哔哩直播",
+            "type": 3,
+            "api": "./py/哔哩直播.py",
+            "searchable": 1,
+            "filterable": 1,
+            "quickSearch": 0,
+            "ext": ""
+        },
+        {
             "key": "hipy_js_JRKAN直播",
             "name": "体育直播",
             "type": 3,
