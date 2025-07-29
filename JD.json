@@ -67,7 +67,7 @@
             "searchable": 1,
             "filterable": 1,
             "quickSearch": 0,
-            "ext": "./js/我的哔哩.js?type=url&params=../json/哔哩大全.json"
+            "ext": "https://d.kstore.dev/download/10086/js/%E6%88%91%E7%9A%84%E5%93%94%E5%93%A9.js?type=url&params=https://d.kstore.dev/download/10086/json/%E5%93%94%E5%93%A9%E5%A4%A7%E5%85%A8.json"
         },
         {
             "key": "网盘配置",
