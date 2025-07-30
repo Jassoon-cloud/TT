@@ -54,10 +54,13 @@
         {
             "key": "豆瓣",
             "name": "豆瓣推荐",
+            "jar": "./jar/pg.jar",
             "type": 3,
-            "indexs": 1,
             "api": "csp_Douban",
-            "searchable": 0
+            "searchable": 0,
+            "changeable": 1,
+            "indexs": 1,
+            "ext": "./lib/tokenm.json$$$./lib/douban.json"
         },
         {
             "key": "drpyS_哔哩大全[官]",
