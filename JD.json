@@ -60,7 +60,7 @@
             "searchable": 0,
             "changeable": 1,
             "indexs": 1,
-            "ext": "./lib/tokenm.json$$$./lib/douban.json"
+            "ext": "https://d.kstore.dev/download/10086/json/douban.json"
         },
         {
             "key": "drpyS_哔哩大全[官]",
