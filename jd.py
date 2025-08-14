@@ -4,7 +4,7 @@ import requests
 # 本地 JSON 文件路径
 LOCAL_JSON_PATH = 'JD.json'
 # 远程 JSON 地址
-REMOTE_JSON_URL = 'https://raw.githubusercontent.com/cluntop/tvbox/refs/heads/main/test/xiaosa/api.json'
+REMOTE_JSON_URL = 'https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/xiaosa/api.json'
 
 # 指定要更新的 key 列表
 KEYS_TO_UPDATE = [
