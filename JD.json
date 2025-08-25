@@ -230,21 +230,6 @@
             "ext": ""
         },
         {
-            "key": "雄鹰",
-            "name": "雄鹰影视",
-            "type": 3,
-            "quickSearch": 1,
-            "api": "csp_AppGet2",
-            "ext": {
-                "url": "",
-                "site": "https://lanyinghz.oss-cn-hangzhou.aliyuncs.com/lanyingxmy.txt",
-                "dataKey": "ca94b06ca359d80e",
-                "dataIv": "ca94b06ca359d80e",
-                "deviceId": "",
-                "version": "120"
-            }
-        },
-        {
             "key": "零度",
             "name": "零度影视",
             "type": 3,
@@ -252,7 +237,7 @@
             "quickSearch": 1,
             "filterable": 1,
             "timeout": 30,
-            "api": "./py/零度影视.py",
+            "api": "./py/魔方APP.py",
             "ext": ""
         },
         {
@@ -266,22 +251,6 @@
                 "site": "https://www.snysw.xyz/mfys.txt",
                 "dataKey": "1234567887654321",
                 "dataIv": "1234567887654321",
-                "deviceId": "",
-                "version": ""
-            },
-            "quickSearch": 1
-        },
-        {
-            "key": "小野",
-            "name": "小野影视",
-            "type": 3,
-            "api": "csp_AppGet",
-            "searchable": 1,
-            "ext": {
-                "url": "https://appcms.xy4k.com",
-                "site": "",
-                "dataKey": "7SDWjknU34zqFbVr",
-                "dataIv": "7SDWjknU34zqFbVr",
                 "deviceId": "",
                 "version": ""
             },
