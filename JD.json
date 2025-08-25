@@ -320,7 +320,7 @@
         },
         {
             "key": "萝卜",
-            "name": "鲸鱼影视",
+            "name": "萝卜影视",
             "type": 3,
             "quickSearch": 1,
             "api": "csp_AppGet",
@@ -334,7 +334,7 @@
         },
         {
             "key": "仓鼠",
-            "name": "仓鼠｜APP",
+            "name": "仓鼠影视",
             "type": 3,
             "quickSearch": 1,
             "api": "csp_AppQi",
